@@ -44,21 +44,11 @@ int main()
     //     cout << i << endl;
     // }
 
-    // infinite loop
-    //  for (;;)
-    //  {
-    //      cout << '1' << endl;
-    //  }
 
-    // Task:
-    // int n;
-    // if (cin >> n)
-    // {
-    //     cout << "Love1" << endl;
-    // }
+    for (;i<n;)
+    {
+        cout << '1' << endl;
+    }
 
-    // if (cout << "Babber")
-    // {
-    //     cout << "Love" << endl;
-    // }
+
 }
