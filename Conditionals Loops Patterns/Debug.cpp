@@ -72,24 +72,77 @@ int main()
     // }
 
     // code 7:
-    int n;
-    cin >> n;
-    for (int i = 1; i <= n; i++)
-    {
-        for (int j = 1; j <= n - i - 1; j++)
-        {
-            printf("  ");
-        }
-        for (int j = i; j < i; j++)
-        {
-            printf("%d ", j);
-        }
-        int ele = 2 * (n - i - 1);
-        for (int j = 1; j <= i - 1; j++)
-        {
-            printf("%d ", ele--);
-        }
-        printf("\n");
-    }
-    return 0;
+    // int n;
+    // cin >> n;
+    // for (int i = 1; i <= n; i++)
+    // {
+    //     for (int j = 1; j <= n - i; j++)
+    //     {
+    //         printf("  ");
+    //     }
+    //     for (int j = i; j < 2 * i; j++)
+    //     {
+    //         printf("%d ", j);
+    //     }
+    //     int ele = 2 * (i - 1);
+    //     for (int j = 1; j <= i - 1; j++)
+    //     {
+    //         printf("%d ", ele--);
+    //     }
+    //     printf("\n");
+    // }
+    // return 0;
+
+    // code 8:
+    // int n;
+    // cin >> n;
+    // for (int i = 0; i < n; ++i)
+    // {
+    //     int k = 0;
+    //     for (int j = 0; j < n * 2 - 1; ++j)
+    //     {
+    //         if (j < n - i - 1)
+    //         {
+    //             cout << " ";
+    //         }
+    //         else if (k < 2 * i + 1)
+    //         {
+    //             if (k == 0 || k == 2 * i || i == n - 1)
+    //             {
+    //                 cout << "*";
+    //             }
+    //             else
+    //             {
+    //                 cout << " ";
+    //             }
+    //             k++;
+    //         }
+    //         else
+    //         {
+    //             cout << " ";
+    //         }
+    //     }
+    //     cout << endl;
+    // }
+
+    // int n;
+    // cin >> n;
+    // int row = 1;
+    // while (row <= n)
+    // {
+    //     int space = row - 1;
+    //     while (space)
+    //     {
+    //         cout << " ";
+    //         space = space - 1;
+    //     }
+    //     int col = 1;
+    //     while (col <= n-row)
+    //     {
+    //         cout << 'x';
+    //         col = col + 1;
+    //     }
+    //     cout << endl;
+    //     row = row + 1;
+    // }
 }
