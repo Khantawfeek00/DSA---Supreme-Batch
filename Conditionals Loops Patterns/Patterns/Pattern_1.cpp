@@ -278,27 +278,28 @@ int main()
     //  *     *
     // *********
 
-    // for (int i = 0; i < n; i++)
-    // {
-    //     for (int j = 0; j < n; j++)
-    //     {
-    //         if (j < n - i - 1)
-    //         {
-    //             cout << " ";
-    //         }
-    //         else
-    //         {
-    //             cout << "* ";
-    //         }
-    //     }
-    //     cout << endl;
-    // }
-    // 5
-    //     *
-    //    * *
-    //   * * *
-    //  * * * *
-    // * * * * *
+    // Full Pyramid
+    //  for (int i = 0; i < n; i++)
+    //  {
+    //      for (int j = 0; j < n; j++)
+    //      {
+    //          if (j < n - i - 1)
+    //          {
+    //              cout << " ";
+    //          }
+    //          else
+    //          {
+    //              cout << "* ";
+    //          }
+    //      }
+    //      cout << endl;
+    //  }
+    //  5
+    //      *
+    //     * *
+    //    * * *
+    //   * * * *
+    //  * * * * *
 
     // for (int i = 0; i < n; i++)
     // {
@@ -353,7 +354,6 @@ int main()
     //      }
     //      cout << endl;
     //  }
-
     // 5
     //     *
     //    * *
@@ -499,7 +499,6 @@ int main()
     //         }
     //     }
     //     cout<<endl;
-
     // }
     // 5
     // A
@@ -507,4 +506,113 @@ int main()
     // A B C B A
     // A B C D C B A
     // A B C D E D C B A
+
+    // Hollow Inverted half Pyramid
+    //  for (int i = 0; i < n; i++)
+    //  {
+    //      for (int j = 0; j < n - i; j++)
+    //      {
+    //          if (j == 0 || i == 0 || j == n - i - 1)
+    //          {
+    //              cout << "*";
+    //          }
+    //          else
+    //          {
+    //              cout << " ";
+    //          }
+    //      }
+    //      cout<<endl;
+    //  }
+    //  6
+    //  ******
+    //  *   *
+    //  *  *
+    //  * *
+    //  **
+    //  *
+
+    // Hollo full Pyramid
+    //  for(int i=0;i<n;i++){
+    //      for(int j=0;j<n;j++){
+    //          if(j<n-i-1){
+    //              cout<<" ";
+    //          }
+    //          else if(j==n-i-1 || i==n-1 || j==n-1){
+    //              cout<<"* ";
+    //          }
+    //          else{
+    //              cout<<"  ";
+    //          }
+    //      }
+    //      cout<<endl;
+    //  }
+    //  5
+    //      *
+    //     * *
+    //    *   *
+    //   *     *
+    //  * * * * *
+
+    // Numeric Hollow Half Pyramid
+    // for (int i = 0; i < n; i++)
+    // {
+    //     for (int j = 0; j < i + 1; j++)
+    //     {
+    //         if (j == 0 || i == n - 1)
+    //         {
+    //             cout << j + 1<<" ";
+    //         }
+    //         else if (j == i)
+    //         {
+    //             cout << i + 1<<" ";
+    //         }
+    //         else
+    //         {
+    //             cout << "  ";
+    //         }
+    //     }
+    //     cout << endl;
+    // }
+    // 5
+    // 1
+    // 1 2
+    // 1   3
+    // 1     4
+    // 1 2 3 4 5
+
+    // Numeric Hollow Inverted Half Pyramid
+    // for (int i = 0; i < n; i++)
+    // {
+    //     for (int j = i; j < n; j++)
+    //     {
+    //         if (i == 0 || j == n - 1)
+    //         {
+    //             cout << j + 1 << " ";
+    //         }
+    //         else if (j == i)
+    //         {
+    //             cout << i + 1 << " ";
+    //         }
+    //         else
+    //         {
+    //             cout << "  ";
+    //         }
+    //     }
+    //     cout << endl;
+    // }
+    // 5
+    // 1 2 3 4 5
+    // 2     5
+    // 3   5
+    // 4 5
+    // 5
+
+    // Numeric Palindrome Equilateral Pyramid
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < n; j++)
+        {
+            cout << " ";
+        }
+    }
 }
