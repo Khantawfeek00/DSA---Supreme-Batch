@@ -454,11 +454,57 @@ int main()
     // ****  ****
     // **********
 
-
     // Fancy Pattern #1
     // for(int i=0;i<n;i++){
-    //     for(int j=0;j<i;j++){
-    //         cout<<""
+    //     for(int j=0;j<2*i+1;j++){
+    //         if(j%2==0)
+    //             cout<<i+1;
+    //         else
+    //             cout<<"*";
     //     }
+    //     cout<<endl;
     // }
+    // for(int i=0;i<n;i++){
+    //     for(int j=0;j<2*n-2*i-1;j++){
+    //         if(j%2==0)
+    //             cout<<n-i;
+    //         else
+    //             cout<<"*";
+    //     }
+    //     cout<<endl;
+    // }
+    // 4
+    // 1
+    // 2*2
+    // 3*3*3
+    // 4*4*4*4
+    // 4*4*4*4
+    // 3*3*3
+    // 2*2
+    // 1
+
+    // Alphabet Palindrome Pyramid
+    // for(int i=0;i<n;i++){
+    //     char a='A';
+    //     char a1='A';
+    //     for(int j=0;j<2*i+1;j++){
+    //         if(j<=i){
+    //             cout<<a<<" ";
+    //             a++;
+    //             a1=a-1;
+    //         }
+    //         else if(j>i){
+    //             a1--;
+    //             cout<<a1<<" ";
+    //         }
+    //     }
+    //     cout<<endl;
+
+    // }
+    // 5
+    // A
+    // A B A
+    // A B C B A
+    // A B C D C B A
+    // A B C D E D C B A
 }
