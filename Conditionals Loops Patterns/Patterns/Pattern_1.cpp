@@ -185,23 +185,23 @@ int main()
     //     *
 
     // Numeric Full Pyramid
-    //     for (int i = 0; i < n; i++)
+    // for (int i = 0; i < n; i++)
+    // {
+    //     for (int j = 0; j < n - i - 1; j++)
     //     {
-    //         for (int j = 0; j < n - i - 1; j++)
-    //         {
-    //             cout << "  ";
-    //         }
-    //         int j = i;
-    //         for (; j < 2 * i ; j++)
-    //         {
-    //             cout << j+1 << " ";
-    //         }
-    //         for (; j >= i; j--)
-    //         {
-    //             cout << j+1 << " ";
-    //         }
-    //         cout << endl;
+    //         cout << "  ";
     //     }
+    //     int j = i;
+    //     for (; j < 2 * i; j++)
+    //     {
+    //         cout << j + 1 << " ";
+    //     }
+    //     for (; j >= i; j--)
+    //     {
+    //         cout << j + 1 << " ";
+    //     }
+    //     cout << endl;
+    // }
     //     5
     //         1
     //       2 3 2
@@ -228,23 +228,237 @@ int main()
     // }
 
     // Numeric Hollow Full Pyramid
-    for (int i = 0; i < n; i++)
-    {
-        for (int j = 0; j < n - i - 1; j++)
-        {
-            cout << "_";
-        }
-        for (int j = 0; j < 2 * i + 1; j++)
-        {
-            if (j == 0)
-                cout << j+1;
-            else if (j == 2 * i)
-                cout << i + 1;
-            else if (i == n - 1 && j%2==0)
-                cout << j/2+1;
-            else
-                cout << " ";
-        }
-        cout << endl;
-    }
+    // for (int i = 0; i < n; i++)
+    // {
+    //     for (int j = 0; j < n - i - 1; j++)
+    //     {
+    //         cout << " ";
+    //     }
+    //     for (int j = 0; j < 2 * i + 1; j++)
+    //     {
+    //         if (j == 0)
+    //             cout << j + 1;
+    //         else if (j == 2 * i)
+    //             cout << i + 1;
+    //         else if (i == n - 1 && j % 2 == 0)
+    //             cout << j / 2 + 1;
+    //         else
+    //             cout << " ";
+    //     }
+    //     cout << endl;
+    // }
+
+    // Hollow Full Pyramid
+    // for (int i = 0; i < n; i++)
+    // {
+    //     int k = 0;
+    //     for (int j = 0; j < 2 * n - 1; j++)
+    //     {
+    //         if (j < n - i - 1)
+    //         {
+    //             cout << " ";
+    //         }
+    //         else if (k < 2 * i + 1)
+    //         {
+    //             if (k == 0 || k == 2 * i || i == n - 1)
+    //                 cout << "*";
+    //             else
+    //                 cout << " ";
+    //             k++;
+    //         }
+    //         else
+    //             cout << " ";
+    //     }
+    //     cout << endl;
+    // }
+    // 5
+    //     *
+    //    * *
+    //   *   *
+    //  *     *
+    // *********
+
+    // for (int i = 0; i < n; i++)
+    // {
+    //     for (int j = 0; j < n; j++)
+    //     {
+    //         if (j < n - i - 1)
+    //         {
+    //             cout << " ";
+    //         }
+    //         else
+    //         {
+    //             cout << "* ";
+    //         }
+    //     }
+    //     cout << endl;
+    // }
+    // 5
+    //     *
+    //    * *
+    //   * * *
+    //  * * * *
+    // * * * * *
+
+    // for (int i = 0; i < n; i++)
+    // {
+    //     for (int j = 0; j < n; j++)
+    //     {
+    //         if (j<i)
+    //         {
+    //             cout << " ";
+    //         }
+    //         else
+    //         {
+    //             cout << "* ";
+    //         }
+    //     }
+    //     cout << endl;
+    // }
+    // 5
+    // * * * * *
+    //  * * * *
+    //   * * *
+    //    * *
+    //     *
+
+    // Diamond Pattern
+    //  for (int i = 0; i < n; i++)
+    //  {
+    //      for (int j = 0; j < n; j++)
+    //      {
+    //          if (j < n - i - 1)
+    //          {
+    //              cout << " ";
+    //          }
+    //          else
+    //          {
+    //              cout << "* ";
+    //          }
+    //      }
+    //      cout << endl;
+    //  }
+    //  for (int i = 0; i < n; i++)
+    //  {
+    //      for (int j = 0; j < n; j++)
+    //      {
+    //          if (j < i)
+    //          {
+    //              cout << " ";
+    //          }
+    //          else
+    //          {
+    //              cout << "* ";
+    //          }
+    //      }
+    //      cout << endl;
+    //  }
+
+    // 5
+    //     *
+    //    * *
+    //   * * *
+    //  * * * *
+    // * * * * *
+    // * * * * *
+    //  * * * *
+    //   * * *
+    //    * *
+    //     *
+
+    // Hollow Diamond Pattern
+    // for (int i = 0; i < n; i++)
+    // {
+    //     for (int j = 0; j < n; j++)
+    //     {
+    //         if (j < n - i - 1)
+    //         {
+    //             cout << " ";
+    //         }
+    //         else
+    //         {
+    //             if (j == n-i-1 || j==n-1)
+    //                 cout << "* ";
+    //             else
+    //                 cout << "  ";
+    //         }
+    //     }
+    //     cout << endl;
+    // }
+    // for (int i = 0; i < n; i++)
+    // {
+    //     for (int j = 0; j < n; j++)
+    //     {
+    //         if (j < i)
+    //         {
+    //             cout << " ";
+    //         }
+    //         else
+    //         {
+    //             if (j == i || j==n-1)
+    //                 cout << "* ";
+    //             else
+    //                 cout << "  ";
+    //         }
+    //     }
+    //     cout << endl;
+    // }
+    //     5
+    //     *
+    //    * *
+    //   *   *
+    //  *     *
+    // *       *
+    // *       *
+    //  *     *
+    //   *   *
+    //    * *
+    //     *
+
+    // Flipped Solid Diamond
+    // for (int i = 0; i < n; i++)
+    // {
+    //     for (int j = 0; j < 2*n; j++)
+    //     {
+    //         if(j<n-i || j>=n+i){
+    //             cout<<"*";
+    //         }
+    //         else{
+    //             cout<<" ";
+    //         }
+    //     }
+    //     cout << endl;
+    // }
+    // for (int i = 0; i < n; i++)
+    // {
+    //     for (int j = 0; j < 2*n; j++)
+    //     {
+    //         if(j<i+1 || j>=2*n-i-1){
+    //             cout<<"*";
+    //         }
+    //         else{
+    //             cout<<" ";
+    //         }
+    //     }
+    //     cout << endl;
+    // }
+    // 5
+    // **********
+    // ****  ****
+    // ***    ***
+    // **      **
+    // *        *
+    // *        *
+    // **      **
+    // ***    ***
+    // ****  ****
+    // **********
+
+
+    // Fancy Pattern #1
+    // for(int i=0;i<n;i++){
+    //     for(int j=0;j<i;j++){
+    //         cout<<""
+    //     }
+    // }
 }
