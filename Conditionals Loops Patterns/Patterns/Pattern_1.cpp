@@ -496,7 +496,7 @@ int main()
     //         else if(j>i){
     //             a1--;
     //             cout<<a1<<" ";
-    //         }
+    //         }+
     //     }
     //     cout<<endl;
     // }
@@ -608,11 +608,40 @@ int main()
     // 5
 
     // Numeric Palindrome Equilateral Pyramid
-    for (int i = 0; i < n; i++)
-    {
-        for (int j = 0; j < n; j++)
-        {
-            cout << " ";
-        }
-    }
+    // for (int i = 0; i < n; i++)
+    // {
+    //     int temp = 1;
+    //     int temp1=0;
+    //     for (int j = 0; j < 2 * n - 1; j++)
+    //     {
+    //         if (j < n - i - 1)
+    //         {
+    //             cout << "  ";
+    //         }
+    //         else if (j < n)
+    //         {
+    //             cout << temp++ << " ";
+    //             temp1=temp-1;
+    //         }
+    //         else if (j < n + i)
+    //         {
+    //             cout << --temp1 << " ";
+    //         }
+    //         else
+    //         {
+    //             cout << "  ";
+    //         }
+    //     }
+    //     cout << endl;
+    // }
+    // 9
+    //                 1
+    //               1 2 1
+    //             1 2 3 2 1
+    //           1 2 3 4 3 2 1
+    //         1 2 3 4 5 4 3 2 1
+    //       1 2 3 4 5 6 5 4 3 2 1
+    //     1 2 3 4 5 6 7 6 5 4 3 2 1
+    //   1 2 3 4 5 6 7 8 7 6 5 4 3 2 1
+    // 1 2 3 4 5 6 7 8 9 8 7 6 5 4 3 2 1 
 }
