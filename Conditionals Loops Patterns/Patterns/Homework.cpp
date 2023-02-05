@@ -76,25 +76,28 @@ int main()
     //  * * * * *
 
     // Numeric Hollow Half Pyramid
-    // for (int i = 0; i < n; i++)
-    // {
-    //     for (int j = 0; j < i + 1; j++)
-    //     {
-    //         if (j == 0 || i == n - 1)
-    //         {
-    //             cout << j + 1<<" ";
-    //         }
-    //         else if (j == i)
-    //         {
-    //             cout << i + 1<<" ";
-    //         }
-    //         else
-    //         {
-    //             cout << "  ";
-    //         }
-    //     }
-    //     cout << endl;
-    // }
+    for (int i = 0; i < n; i++)
+    {
+        for(int j=0;j<n-i;j++){
+            cout<<" ";
+        }
+        for (int j = 0; j < i + 1; j++)
+        {
+            if (j == 0 || i == n - 1)
+            {
+                cout << j + 1<<" ";
+            }
+            else if (j == i)
+            {
+                cout << i + 1<<" ";
+            }
+            else
+            {
+                cout << "  ";
+            }
+        }
+        cout << endl;
+    }
     // 5
     // 1
     // 1 2
@@ -382,20 +385,20 @@ int main()
     // 1
 
     // Pascal's Traingle Pattern
-    for (int i = 0; i < n; i++)
-    {
-        for (int j = 0; j < n - i; j++)
-        {
-            cout << " ";
-        }
-        int number = 1;
-        for (int j = 0; j <=i; j++)
-        {
-            cout << number << " ";
-            number = number * (i - j) / (j + 1);
-        }
-        cout << endl;
-    }
+    // for (int i = 0; i < n; i++)
+    // {
+    //     for (int j = 0; j < n - i; j++)
+    //     {
+    //         cout << " ";
+    //     }
+    //     int number = 1;
+    //     for (int j = 0; j <= i; j++)
+    //     {
+    //         cout << number << " ";
+    //         number = number * (i - j) / (j + 1);
+    //     }
+    //     cout << endl;
+    // }
     // 5
     //      1
     //     1 1
