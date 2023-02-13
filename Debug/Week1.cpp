@@ -11,7 +11,7 @@ int main()
 
     // code 2:
     //  short i=2300, j=4322;
-    //  cout<<"i+j="<<(i+j);
+    //  cout<<"i+j="<<-(i+j);
 
     // code 3:
     //  float l, b;
