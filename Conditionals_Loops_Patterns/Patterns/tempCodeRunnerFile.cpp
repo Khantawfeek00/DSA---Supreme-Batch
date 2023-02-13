@@ -498,35 +498,16 @@ int main()
     // 1
 
     // Fancy Pattern #1
-    // int k = n;
-    // for (int i = 0; i < n + 1; i++)
-    // {
-    //     for (int j = 0; j < i + 1; j++)
-    //     {
-    //         cout << k;
-    //     }
-    //     k++;
-    //     cout << endl;
-    // }
-    // k = k - 2;
-    // for (int i = 0; i < n; i++)
-    // {
-    //     for (int j = 0; j < n - i; j++)
-    //     {
-    //         cout << k;
-    //     }
-    //     k--;
-    //     cout << endl;
-    // }
-    // 3
-    // 3
-    // 44
-    // 555
-    // 6666
-    // 555
-    // 44
-    // 3
-    
+    int k = n;
+    for (int i = 0; i < n + 1; i++)
+    {
+        for (int j = 0; j < i + 1; j++)
+        {
+            cout << k;
+        }
+        k++;
+        cout << endl;
+    }
 
     // Alphabet Palindrome Pyramid
     // for(int i=0;i<n;i++){
