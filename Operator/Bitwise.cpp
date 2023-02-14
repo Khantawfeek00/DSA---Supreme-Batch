@@ -22,4 +22,12 @@ int main()
 
     // cout << (2 & 3);
     // cout << (2 & 3);
+
+    // Revised
+    //  int a=-5;
+    //  cout<<~a;
+
+    // int a = 5;
+    // int b = 6;
+    // cout << (a ^ b);
 }
