@@ -1,6 +1,8 @@
 #include <iostream>
-#include <math.h>
+#include <cmath>
+
 using namespace std;
+#define ull unsigned long long int
 
 float areaOfCircle(int r)
 {
@@ -80,17 +82,14 @@ int countSet(int n)
 
 int decToBinary(int n)
 {
-    unsigned long long int  binary = 0;
-    int c = 0;
-    while (n != 0)
+    for (int i = 31; i >= 0; i--)
     {
-        int rem=n%2;
-        long long int lli=pow(10,c);
-        binary+=rem*lli;
-        n = n / 2;
-        c++;
+        int k = n >> i;
+        if (k & 1)
+            cout << "1";
+        else
+            cout << "0";
     }
-    return binary;
 }
 
 float kmToMiles(int n)
@@ -198,8 +197,7 @@ int main()
     int n;
     cout << "Enter the value of n : ";
     cin >> n;
-    // decToBinary(n);
-    cout << "Binary = " << decToBinary(n);
+    decToBinary(n);
     return 0;
     // OR
     // int n;
