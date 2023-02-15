@@ -47,12 +47,25 @@ bool isPrime(int n)
 void printDigits(int n)
 {
     cout << "Digits are : ";
-    while (n != 0)
+    // print 527==> 7 2 7   
+    // while (n != 0)
+    // {
+    //     cout << n % 10 << " ";
+    //     n = n / 10;
+    // }
+    // return;
+
+
+    // print 527==> 5 2 7  
+    int len = (int)floor(log10(n)) + 1;
+    int i = len - 1;
+    while (n > 0)
     {
-        cout << n % 10 << " ";
-        n = n / 10;
+        int div = n / pow(10, i);
+        cout << div << " ";
+        n = n - (pow(10, i) * div);
+        i--;
     }
-    return;
 }
 
 int reverseDigit(int n)
@@ -173,11 +186,11 @@ int main()
     // }
 
     // 6.Print all digits in an integer
-    // int n;
-    // cout << "Enter the value of n :";
-    // cin >> n;
-    // printDigits(n);
-    // return 0;
+    int n;
+    cout << "Enter the value of n :";
+    cin >> n;
+    printDigits(n);
+    return 0;
 
     // 7.Create a number using digits
     // int n;
@@ -194,11 +207,11 @@ int main()
     // cout << "Number of Set bits are : " << noOfSetBits;
 
     // Print Binary equivalent of a decimal Number
-    int n;
-    cout << "Enter the value of n : ";
-    cin >> n;
-    decToBinary(n);
-    return 0;
+    // int n;
+    // cout << "Enter the value of n : ";
+    // cin >> n;
+    // decToBinary(n);
+    // return 0;
     // OR
     // int n;
     // cout << "Enter the value of n : ";
