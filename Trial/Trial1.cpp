@@ -55,7 +55,10 @@ int main()
     // int y=0;
     // cout<<(y=2);
 
-    int x=97;
-    int y=sizeof(x++);
-    cout<<sizeof(x++);
+    // int x=97;
+    // int y=sizeof(x++);
+    // cout<<sizeof(x++);
+
+    long a[100];
+    cout << sizeof(a);
 }
