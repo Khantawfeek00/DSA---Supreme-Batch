@@ -1,7 +1,11 @@
 #include <iostream>
 using namespace std;
 
-int fun(int = 0, int = 0);
+int *fun(int a, int b)
+{
+    int arr[] = {1, 2, 3, 4, 5};
+    return arr;
+}
 int main()
 {
     // int num = INT64_MAX;
@@ -52,12 +56,19 @@ int main()
 
     // printf("PALACE");
 
-    int y=0;
-    cout<<(y=2);
-}
+    // int y=0;
+    // cout<<(y=2);
 
+    // int x=97;
+    // int y=sizeof(x++);
+    // cout<<sizeof(x++);
 
-int fun(int x, int y)
-{
-    return (x + y);
+    // int a[100] = {};
+    // cout << a[0] << endl;
+    // cout << a[1] << endl;
+    // cout << a[2] << endl;
+    int *arr = fun(1, 2);
+    cout << *(arr + 0) << endl;
+    cout << *(arr + 1) << endl;
+    cout << *(arr + 2) << endl;
 }

@@ -1,7 +1,6 @@
 #include <iostream>
 using namespace std;
 
-int fun(int = 0, int = 0);
 int main()
 {
     // int num = INT64_MAX;
@@ -59,6 +58,9 @@ int main()
     // int y=sizeof(x++);
     // cout<<sizeof(x++);
 
-    long a[100];
-    cout << sizeof(a);
+    // int a[100] = {};
+    // cout << a[0] << endl;
+    // cout << a[1] << endl;
+    // cout << a[2] << endl;
+
 }
