@@ -3,7 +3,7 @@
 using namespace std;
 
 //Rotate the Array by 1---O(n)
-void rotate(vector<int>& arr, int n)
+void Rightrotate(vector<int>& arr, int n)
 {
     for (int i = 0; i < n - 1; i++)
     {
@@ -22,7 +22,7 @@ int main()
     {
         cin >> arr[i];
     }
-    rotate(arr, n);
+    Rightrotate(arr, n);
     for (int i = 0; i < n; i++)
     {
         cout << arr[i] << " ";
