@@ -3,21 +3,53 @@
 #include <algorithm>
 using namespace std;
 
-// Also gives minimum number in sorted rotated array
+// I/P: 3 4 5 6 7 1 2
+// O/P: pivot value=1
+// int findPivotIndex(vector<int> &arr)
+// {
+//     int s = 0;
+//     int e = arr.size() - 1;
+//     int mid = s + (e - s) / 2;
+//     if (arr[s] < arr[e])
+//     {
+//         return arr[s];
+//     }
+//     while (s < e)
+//     {
+//         if (arr[mid] >= arr[0])
+//             s = mid + 1;
+//         else
+//             e = mid;
+//         mid = s + (e - s) / 2;
+//     }
+//     return s;
+// }
+
+// I/P: 3 4 5 6 7 1 2
+// O/P: pivot value=7
 int findPivotIndex(vector<int> &arr)
 {
+    int n = arr.size();
+    if(n==1){
+        return 0;
+    }
     int s = 0;
     int e = arr.size() - 1;
-    int m = s + (e - s) / 2;
-    while (s < e)
+    int mid = s + (e - s) / 2;
+    while (s <= e)
     {
-        if (arr[m] >= arr[0])
-            s = m + 1;
+        if (arr[mid] > arr[(mid + 1) % n])
+            return mid;
+        else if (arr[mid] < arr[abs(mid - 1) % n])
+            return abs(mid - 1) % n;
+        else if (arr[mid] >= arr[s])
+            s = mid + 1;
         else
-            e = m;
-        m = s + (e - s) / 2;
+            e = mid - 1;
+        mid = s + (e - s) / 2;
+        // cout << "mid  = " << mid << endl;
     }
-    return s;
+    return -1;
 }
 
 int main()
@@ -33,6 +65,6 @@ int main()
     }
 
     int peak = findPivotIndex(arr);
-    cout << "Pivot Elemet in sorted rotated array is : " << peak;
+    cout << "Pivot Elemet in sorted rotated array is : " << arr[peak];
     return 0;
 }
