@@ -3,48 +3,39 @@
 #include <algorithm>
 using namespace std;
 
-int mySqrt(int x)
+int mySqrt(int n)
 {
-
-    // using inbuilt function
-    //  return sqrt(x);
-
-    // using binary search
-    int s = 1;
-    int e = x;
+    int sqrt = 0;
+    int s = 0;
+    int e = n;
     int mid = s + (e - s) / 2;
     while (s <= e)
     {
-        if (mid == x / mid)
-        {
+        if (mid * mid == n)
             return mid;
-        }
-        else if (mid > x / mid)
+        else if (mid * mid < n)
         {
-            e = mid - 1;
-        }
-        else
-        {
+            sqrt = mid;
             s = mid + 1;
         }
+        else
+
+            e = mid - 1;
         mid = s + (e - s) / 2;
     }
-    return e;
+    return sqrt;
 }
-
-double preciseSqrt(int x, int num, int precise)
+double precise(int ans, int precise,int n)
 {
     double factor = 1;
-    double ans = num;
+    double result = ans;
     for (int i = 0; i < precise; i++)
     {
         factor = factor / 10;
-        for (double j = ans; j * j < x; j += factor)
-        {
-            ans = j;
-        }
+        for (double j = result; j * j < n; j += factor)
+            result = j;
     }
-    return ans;
+    return result;
 }
 
 int main()
@@ -53,7 +44,10 @@ int main()
     cout << "Enter the value of n :";
     cin >> n;
     int ans = mySqrt(n);
-    cout << "Sqaure Root is : " << ans << endl;
-    cout << "Precise Sqaure Root is : " << preciseSqrt(n, ans, 4);
+    // cout << "Sqaure Root is : " << ans << endl;
+    cout << "Enter Precision : ";
+    int precision;
+    cin >> precision;
+    cout << "Precise Sqaure Root is : " << precise(ans, precision,n);
     return 0;
 }
