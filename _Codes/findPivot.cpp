@@ -27,17 +27,41 @@ using namespace std;
 
 // I/P: 3 4 5 6 7 1 2
 // O/P: pivot value=7
+// int findPivotIndex(vector<int> &arr)
+// {
+//     int n = arr.size();
+//     if(n==1){
+//         return 0;
+//     }
+//     int s = 0;
+//     int e = arr.size() - 1;
+//     int mid = s + (e - s) / 2;
+//     while (s <= e)
+//     {
+//         if (arr[mid] > arr[(mid + 1) % n])
+//             return mid;
+//         else if (arr[mid] < arr[abs(mid - 1) % n])
+//             return abs(mid - 1) % n;
+//         else if (arr[mid] >= arr[s])
+//             s = mid + 1;
+//         else
+//             e = mid - 1;
+//         mid = s + (e - s) / 2;
+//     }
+//     return -1;
+// }
+
+//OR
 int findPivotIndex(vector<int> &arr)
 {
     int n = arr.size();
-    if(n==1){
-        return 0;
-    }
     int s = 0;
     int e = arr.size() - 1;
     int mid = s + (e - s) / 2;
     while (s <= e)
     {
+        if(s==e)
+            return s;
         if (arr[mid] > arr[(mid + 1) % n])
             return mid;
         else if (arr[mid] < arr[abs(mid - 1) % n])
@@ -47,7 +71,6 @@ int findPivotIndex(vector<int> &arr)
         else
             e = mid - 1;
         mid = s + (e - s) / 2;
-        // cout << "mid  = " << mid << endl;
     }
     return -1;
 }
