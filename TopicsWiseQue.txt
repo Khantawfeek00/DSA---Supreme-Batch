@@ -1,0 +1,56 @@
+* Programming Fundamentals:(FlowChart and Pseudocode) (Lecture: 1)
+1. Add 2 numbers by taking input.
+2. find Circumference of circle.
+3. Average of 3 numbers
+4. Check number is ODD or Even
+5. Student & Grade FlowChart
+6. Check number is +ve,-ve or 0.
+7. Printing Counting from 1 to N
+8. Add N numbers from user
+9. Printing 1 to N only odd numbers
+10. Multiply 2 no by taking input
+11. Find perimeter if a triangle
+12. Find simple interest
+13. Print counting from N to 1
+14. Find Factorial of a number
+15. Check Prime or not
+16. Valid triangle or not
+17. Printing 1 to N nut only even numbers.
+18. Print max of three numbers
+
+* Create your first program (Lecture: 2)
+None
+
+* Patterns (Lecture: 3 & 4)
+19. Solid Rectangle
+20. Hollow Rectangle
+21. Half Pyramid
+22. Inverted Half Pyramid
+23. Numeric Half Pyramid
+24. Inverted Half Pyramid
+25. Full Pyramid
+26. Inverted Full Pyramid
+27. Numeric Full Pyramid
+28. Numeric Hollow Full Pyramid
+29. Solid Square Pattern
+30. Hollow Square Pattern
+31. Hollow Inverted Half Pyramid
+32. Hollow Full Pyramid
+33. Full Pyramid
+34. Solid Diamond
+35. Hollow Diamond
+37. Flipped Solid Diamond
+38. Alphabet Palindrome Pyramid
+39. Numeric Hollow Half Pyramid
+39. Numeric Hollow Inverted Half Pyramid
+40. Numeric Palindrome Equilateral Pyramid
+
+* Operators, Loop and Conditionas (Lecture: 5)
+None
+
+* Functions (Lecture: 6)
+41. Write a Function to add 2 numbers
+42. Find max of 3 numbers
+43. Counting from 1 to n
+44. Write a Function of Student & Grade Problem
+45.
