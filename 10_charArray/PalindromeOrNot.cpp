@@ -9,11 +9,13 @@ bool isPalindrome(char arr[])
     while (s < e)
     {
         if (arr[s] != arr[e])
-            return false;
+        {
+            return 0;
+        }
         s++;
         e--;
     }
-    return true;
+    return 1;
 }
 int main()
 {

@@ -1,25 +1,46 @@
 #include <iostream>
+#include <string.h>
 using namespace std;
 
 int main()
 {
-    char name[4];
-    cin >> name;
-    // cout << name;
-    for (char ele : name)
-        cout << ele;
+    // char name[4];
+    // cin >> name;
+    // // cout << name;
+    // for (char ele : name)
+    //     cout << ele;
 
-    cout << name[4];
-    cout << name[5];
+    // cout << name[4];
+    // cout << name[5];
+
+    // // char name[20];
+    // // cin >> name;
+    // // cout << name;
+
+    // char arr[50];
+    // cin >> arr[49];
+    // cout << arr[49];
+    // cin >> name;
+    // cin.getline(name, 40);
+
+    // char name[7];
+    // // cin >> name;
+    // cin.getline(name, 8);
+    // // for (int i = 0; i < 7; i++)
+    // // {
+    // //     cin >> name[i];
+    // // }
+    // cout << (int)name[7] << endl;
+    // cout << (int)name[8] << endl;
 
     // char name[20];
-    // cin >> name;
+    // cin.getline(name, 20);
     // cout << name;
 
-
     char arr[50];
-    cin >> arr[49];
-    cout << arr[49];
-    cin >> name;
-    cin.getline(name, 40);
+    cin >> arr[2];
+    cin >> arr[14];
+    cin >> arr;
+    cin.getline(arr, 30);
+    cout << arr;
 }

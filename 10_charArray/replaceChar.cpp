@@ -8,9 +8,12 @@ void replaceChar(char arr[], char replace)
     while (arr[i] != '\0')
     {
         if (arr[i] == ' ')
+        {
             arr[i] = replace;
+        }
         i++;
     }
+    return;
 }
 int main()
 {
@@ -21,5 +24,5 @@ int main()
     cout << "Enter the character : ";
     cin >> ch;
     replaceChar(arr, ch);
-    cout << "Reverse of String is : " << arr << endl;
+    cout << "String after replacing the character is : " << arr << endl;
 }
