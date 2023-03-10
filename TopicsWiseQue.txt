@@ -1,56 +1,137 @@
 * Programming Fundamentals:(FlowChart and Pseudocode) (Lecture: 1)
-1. Add 2 numbers by taking input.
-2. find Circumference of circle.
-3. Average of 3 numbers
-4. Check number is ODD or Even
-5. Student & Grade FlowChart
-6. Check number is +ve,-ve or 0.
-7. Printing Counting from 1 to N
-8. Add N numbers from user
-9. Printing 1 to N only odd numbers
-10. Multiply 2 no by taking input
-11. Find perimeter if a triangle
-12. Find simple interest
-13. Print counting from N to 1
-14. Find Factorial of a number
-15. Check Prime or not
-16. Valid triangle or not
-17. Printing 1 to N nut only even numbers.
-18. Print max of three numbers
+Add 2 numbers by taking input.
+find Circumference of circle.
+Average of 3 numbers
+Check number is ODD or Even
+Student & Grade FlowChart
+Check number is +ve,-ve or 0.
+Printing Counting from 1 to N
+Add N numbers from user
+Printing 1 to N only odd numbers
+Multiply 2 no by taking input
+Find perimeter if a triangle
+Find simple interest
+Print counting from N to 1
+Find Factorial of a number
+Check Prime or not
+Valid triangle or not
+Printing 1 to N nut only even numbers.
+Print max of three numbers
 
 * Create your first program (Lecture: 2)
 None
 
 * Patterns (Lecture: 3 & 4)
-19. Solid Rectangle
-20. Hollow Rectangle
-21. Half Pyramid
-22. Inverted Half Pyramid
-23. Numeric Half Pyramid
-24. Inverted Half Pyramid
-25. Full Pyramid
-26. Inverted Full Pyramid
-27. Numeric Full Pyramid
-28. Numeric Hollow Full Pyramid
-29. Solid Square Pattern
-30. Hollow Square Pattern
-31. Hollow Inverted Half Pyramid
-32. Hollow Full Pyramid
-33. Full Pyramid
-34. Solid Diamond
-35. Hollow Diamond
-37. Flipped Solid Diamond
-38. Alphabet Palindrome Pyramid
-39. Numeric Hollow Half Pyramid
-39. Numeric Hollow Inverted Half Pyramid
-40. Numeric Palindrome Equilateral Pyramid
+Solid Rectangle
+Hollow Rectangle
+Half Pyramid
+Inverted Half Pyramid
+Numeric Half Pyramid
+Inverted Half Pyramid
+Full Pyramid
+Inverted Full Pyramid
+Numeric Full Pyramid
+Numeric Hollow Full Pyramid
+Solid Square Pattern
+Hollow Square Pattern
+Hollow Inverted Half Pyramid
+Hollow Full Pyramid
+Full Pyramid
+Solid Diamond
+Hollow Diamond
+Flipped Solid Diamond
+Alphabet Palindrome Pyramid
+Numeric Hollow Half Pyramid
+Numeric Hollow Inverted Half Pyramid
+Numeric Palindrome Equilateral Pyramid
+Floyd's Triangle Pattern
+Pascal's Traingle Pattern
+Butterfly Pattern
 
 * Operators, Loop and Conditionas (Lecture: 5)
 None
 
 * Functions (Lecture: 6)
-41. Write a Function to add 2 numbers
-42. Find max of 3 numbers
-43. Counting from 1 to n
-44. Write a Function of Student & Grade Problem
-45.
+Write a Function to add 2 numbers.
+Find max of 3 numbers.
+Counting from 1 to n.
+Write a Function of Student & Grade Problem.
+Sum of Even no upto n.
+Write a function to display area of circle.
+Find number is Even or Odd.
+Find factorial of a number.
+Check Number is prime or not.
+Print all prime number from 1 to N.
+Print all digits in an integer.
+Create a number using digits.
+Print number of set bits.
+Print binary quivalent of a Decimal Number.
+Convert distance in KM to MILES.
+Reverse an Integer.
+Set ith bit.
+Convert celsius to Fahrenheit.
+Display Area of Circle.
+
+* Array Class-1 (Lecture: 7)
+Linear Search in Array
+Count 0's and 1's in Array
+Maximum number in an Array
+Extreme Print in Array
+Reverse an Array
+
+* Array Class-2 (Lecture: 8)
+Find Unique Element
+Union of 2 Array
+Intersection of 2 Array
+Pair Sum
+Tripet Sum
+Sort 0's & 1's.
+Left rotate an Array by 1 Element
+Majority Element in an Array
+Buy & Sell Stock --Level 1
+
+* Array Class-3 (Lecture: 9)
+Row sum print
+Column sum print
+Max/Min 2D Array
+Rotate Matrix by 90deg
+Spiral Print 
+Wave Printing
+Sort 0's 1's 2's
+Move all -ve number to one side of Array
+Find duplicate Element
+Find missin Element
+Find first repeating Element
+Find common Element in 3 Arrays
+Factorial of large Number
+
+* Searching & Sorting (Lecture: 10)
+Binary Search
+Find first occurence of an Element
+Find last occurence of an Element
+Total Number of occurence.
+Find Missing Element using Binary Search
+Peak Element in a Mountain Array
+
+*Searching & Sorting (Lecture: 11)
+Find Pivot using Binary Search
+Search in a rotated sorted Array
+SquareRoot using Binary Search
+Search in 2D Sorted Array using Binary Search
+
+*Searching & Sorting (Lecture:12)
+Binary Search in Nearly Sorted Array
+Divide 2 Numbers Using Binary Search
+Find the Odd occuring element in an Array
+HomeWork-
+K-Diff Pairs in an Array
+Find K-Closest Element
+Exponential Search & unBounded Binary Search
+Book Allocation Problem
+Painter Partition Problem
+Aggresive cows
+EKO SPOJ
+PRATA SPOJ
+
+*Char Arrays and Strings
+

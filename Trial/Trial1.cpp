@@ -64,13 +64,17 @@ int main()
     // cout << a[1] << endl;
     // cout << a[2] << endl;
 
-    switch (true)
-    {
-    case 1:
-        cout << "Hello world";
-        break;
-    default:
-        cout << "default";
-        break;
-    }
+    // switch (true)
+    // {
+    // case 1:
+    //     cout << "Hello world";
+    //     break;
+    // default:
+    //     cout << "default";
+    //     break;
+    // }
+
+
+    //FirstOcc Using Binary Search
+    
 }
