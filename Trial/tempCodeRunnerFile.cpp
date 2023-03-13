@@ -1,74 +1,40 @@
+#include <vector>
 #include <iostream>
+#include <algorithm>
+#include <string>
 using namespace std;
 
-int *fun(int a, int b)
-{
-    int arr[] = {1, 2, 3, 4, 5};
-    return arr;
-}
+// bool cmp(int first, int second)
+// {
+//     return to_string(first).compare(to_string(second)) >= 0 ? true : false;
+// }
+// string largestNumber(vector<int> &nums)
+// {
+//     sort(nums.begin(), nums.end(), cmp);
+//     string ans = "";
+//     for (int i = 0; i < nums.size(); i++)
+//         ans += to_string(nums[i]);
+//     return ans;
+//     ans.substr(0,8);
+// }
+
 int main()
 {
-    // int num = INT64_MAX;
-    // cout << num << endl;
-    // cout << (num=num >> 1) << endl;
-    // cout << (num=num << 1) << endl;
-    // cout << (num=num << 1) << endl;
-    // cout << (num=num << 1) << endl;
-
-    // int n=1;
-    // while(n>0){
-    //     cout<<"n = "<<n<<endl;
-    //     n=n<<1;
-    // }
-    // cout<<"Negative value occured: "<<n;
-
-    // if(2 && 7){
-    //     cout<<true;
-    // }
-    // cout<<fun(5);
-    // return 0;
-    // int y=1;
-    // if(y|(y=2)){
-    //     cout<<"Ecea";
-    // }
-
-    // int a;
-    // switch(a){
-    //     cout<<"Helooe";
-
-    // }
-
-    // char code = 'A';
-
-    // switch (code)
-
+    // int n;
+    // cout << "Enter the size of vector :";
+    // cin >> n;
+    // vector<int> arr(n);
+    // cout << "Enter the elements of vector :";
+    // for (int i = 0; i < n; i++)
     // {
-
-    // case 1==8:
-    //     printf("ANT ");
-    //     break;
-    // case 1 &&2:
-    //     printf("KING ");
-    //     break;
-    // default:
-    //     printf("NOKING");
+    //     cin >> arr[i];
     // }
+    // // cout << largestNumber(arr);
+    // return 0;
 
-    // printf("PALACE");
-
-    // int y=0;
-    // cout<<(y=2);
-
-    // int x=97;
-    // int y=sizeof(x++);
-    // cout<<sizeof(x++);
-
-    // int a[100] = {};
-    // cout << a[0] << endl;
-    // cout << a[1] << endl;
-    // cout << a[2] << endl;
-    int *arr = fun(1, 2);
-    cout << *(arr + 0) << endl;
-    cout << *(arr + 1) << endl;
-    cout << *(arr + 2) << endl;
+    vector<string> arr={"flower","flow","flight"};
+    sort(arr.begin(),arr.end());
+    for(string str:arr){
+        cout<<str<<endl;
+    }
 }
