@@ -10,7 +10,10 @@ bool cmp(char first, char second)
 
 int main()
 {
-    string str = "babber";
-    sort(str.begin(), str.end(), cmp);
-    cout << str;
+    // string str = "babber";
+    int a=10;
+    int b=11;
+    cout<<to_string(a).compare(to_string(b));
+    // sort(str.begin(), str.end(), cmp);
+    // cout << str;
 }
