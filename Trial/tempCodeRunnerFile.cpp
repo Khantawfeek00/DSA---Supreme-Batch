@@ -2,6 +2,7 @@
 #include <iostream>
 #include <algorithm>
 #include <string>
+#include<map>
 using namespace std;
 
 // bool cmp(int first, int second)
@@ -32,9 +33,16 @@ int main()
     // // cout << largestNumber(arr);
     // return 0;
 
-    vector<string> arr={"flower","flow","flight"};
-    sort(arr.begin(),arr.end());
-    for(string str:arr){
-        cout<<str<<endl;
-    }
+    // vector<string> arr={"flower","flow","flight"};
+    // sort(arr.begin(),arr.end());
+    // for(string str:arr){
+    //     cout<<str<<endl;
+    // }
+
+    map<int,char> m;
+    // m[100]='X';
+    if(m[100]=='\0')
+        cout<<"present"<<m[100];
+    else
+        cout<<"not present";
 }
