@@ -3,6 +3,18 @@ using namespace std;
 
 int main()
 {
+
+    // int a;
+    // cin >> a;
+    // if (a > 10)
+    // {
+    //     cout << "Score is Greater than 10";
+    // }
+    // else
+    // {
+    //     cout << "Score is less than 10";
+    // }
+
     // int a;
 
     // //taking input from the user

@@ -51,11 +51,11 @@ int main()
     //  }
 
     // Task:
-    // int n;
-    // if (cin >> n)
-    // {
-    //     cout << "Love1" << endl;
-    // }
+    int n;
+    if (cin >> n)
+    {
+        cout << "Love1" << endl;
+    }
 
     // if (cout << "Babber")
     // {

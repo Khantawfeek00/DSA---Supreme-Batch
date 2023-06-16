@@ -82,7 +82,7 @@ int main()
     // Half Pyramid
     // for (int i = 0; i < n; i++)
     // {
-    //     for (int j = 0; j < i + 1; j++)
+    //     for (int j = 0; j <= i; j++)
     //     {
     //         cout << "* ";
     //     }
@@ -98,7 +98,7 @@ int main()
     // Inverted Half Pyramid
     // for (int i = 0; i < n; i++)
     // {
-    //     for (int j = n - i; j > 0; j--)
+    //     for (int j = n; j > i; j--)
     //     {
     //         cout << "* ";
     //     }
@@ -114,9 +114,9 @@ int main()
     // Numeriic Half Pyramid
     // for (int i = 0; i < n; i++)
     // {
-    //     for (int j = 0; j < i + 1; j++)
+    //     for (int j = 0; j <= i; j++)
     //     {
-    //         cout << j + 1;
+    //         cout << j + 1 << " ";
     //     }
     //     cout << endl;
     // }
@@ -132,27 +132,30 @@ int main()
     // {
     //     for (int j = 0; j < n - i; j++)
     //     {
-    //         cout << j + 1;
+    //         cout << j + 1 << " ";
     //     }
     //     cout << endl;
     // }
     // 5
-    // 12345
-    // 1234
-    // 123
-    // 12
+    // 1 2 3 4 5
+    // 1 2 3 4
+    // 1 2 3
+    // 1 2
     // 1
 
     // Full Pyramid
     // for (int i = 0; i < n; i++)
     // {
-    //     for (int j = 0; j < n - i - 1; j++)
+    //     for (int j = 0; j < n; j++)
     //     {
-    //         cout << " ";
-    //     }
-    //     for (int j = 0; j < i + 1; j++)
-    //     {
-    //         cout << "* ";
+    //         if (j < n - i - 1)
+    //         {
+    //             cout << " ";
+    //         }
+    //         else
+    //         {
+    //             cout << "* ";
+    //         }
     //     }
     //     cout << endl;
     // }
@@ -205,14 +208,15 @@ int main()
     //     {
     //         cout << "  ";
     //     }
-    //     int j = i;
-    //     for (; j < 2 * i; j++)
+    //     int k = i;
+    //     for (; k <= 2 * i; k++)
     //     {
-    //         cout << j + 1 << " ";
+    //         cout << k + 1 << " ";
     //     }
-    //     for (; j >=i; j--)
+    //     k = k - 1;
+    //     for (; k > i; k--)
     //     {
-    //         cout << j + 1 << " ";
+    //         cout << k << " ";
     //     }
     //     cout << endl;
     // }
@@ -526,7 +530,6 @@ int main()
     // 555
     // 44
     // 3
-    
 
     // Alphabet Palindrome Pyramid
     // for(int i=0;i<n;i++){
