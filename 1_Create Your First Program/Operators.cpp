@@ -26,8 +26,8 @@ int main()
     // cout<< (a == b)<< endl;
 
     // Assignment Operator
-    int temp = a;
-    cout<<"temp = << tem<<endl;
+    // int temp = a;
+    // cout << "temp = " << temp << endl;
 
     // a += 10;
     // cout<< "a+= "<< a<< endl;
@@ -45,12 +45,10 @@ int main()
     // cout<< "a%= "<< a<< endl;k
 
     // Logical Operators
-    // cout<< (a > 10 && b > 0)<< endl;
-    // cout<< (a > 10 || b > 0)<< endl;
-    // cout<< (a < 10 && b > 0)<< endl;
-    // cout<< !(a < 10)<< endl;
+    cout << (a > 10 && b > 0) << endl;
+    cout << (a > 10 || b > 0) << endl;
+    cout << (a < 10 && b > 0) << endl;
+    cout << !(a < 10) << endl;
 
-    //Bitwise Operators
-
-    
+    // Bitwise Operators
 }

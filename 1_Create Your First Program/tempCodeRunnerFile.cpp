@@ -1,6 +1,2 @@
-cout<< (a > b)<< endl;
-    cout<< (a < b)<< endl;
-    cout<< (a >= b)<< endl;
-    cout<< (a <= b)<< endl;
-    cout<< (a != b)<< endl;
-    cout<< (a == b)<< endl;
+ int temp = a;
+    cout<<"temp = "<< tem<<endl;
