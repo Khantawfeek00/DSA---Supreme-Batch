@@ -3,8 +3,8 @@ using namespace std;
 
 int main()
 {
-    // bool a = false;
-    // bool b = false;
+    bool a = false;
+    bool b = true;
 
     // cout << (a & b) << endl;
     // cout << (a | b) << endl;
@@ -15,19 +15,19 @@ int main()
     // int b = 100;
     // int c = -10;
 
-    // cout << (a ^ b) << endl;
-    // cout << (a ^ c) << endl;
+    // cout<< (a ^ b)<< endl;
+    // cout<< (a ^ c)<< endl;
 
-    // cout<<~c;
+    // cou<<~c;
 
-    // cout << (2 & 3);
-    // cout << (2 & 3);
+    // cout<< (2 & 3);
+    // cout<< (2 & 3);
 
     // Revised
     //  int a=-5;
-    //  cout<<~a;
+    //  cou<<~a;
 
     // int a = 5;
     // int b = 6;
-    // cout << (a ^ b);
+    // cout<< (a ^ b);
 }

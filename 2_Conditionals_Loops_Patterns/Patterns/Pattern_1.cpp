@@ -628,6 +628,34 @@ int main()
     // 1     4
     // 1 2 3 4 5
 
+    // Numeric Hollow Pyramid
+    // for (int i = 0; i < n; i++)
+    // {
+    //     for (int j = 0; j < n - i - 1; j++)
+    //     {
+    //         cout << "  ";
+    //     }
+    //     for (int j = 0; j < 2 * i + 1; j++)
+    //     {
+    //         if (j == 0)
+    //             cout << "1 ";
+    //         else if (j == 2 * i)
+    //             cout << i + 1 << " ";
+    //         else if (i == n - 1 && j % 2 == 0)
+    //             cout << j / 2 + 1 << " ";
+    //         else
+    //             cout << "  ";
+    //     }
+    //     cout << endl;
+    // }
+    // 6
+    //           1
+    //         1   2
+    //       1       3
+    //     1           4
+    //   1               5
+    // 1   2   3   4   5   6
+
     // Numeric Hollow Inverted Half Pyramid
     // for (int i = 0; i < n; i++)
     // {
