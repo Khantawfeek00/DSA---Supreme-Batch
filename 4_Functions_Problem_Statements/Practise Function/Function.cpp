@@ -51,6 +51,21 @@ int findMax(int a, int b, int c)
         return c;
     }
 }
+// OR
+int findMaxOf(int a, int b, int c)
+{
+    if (a > b)
+    {
+        if (a > c)
+            return a;
+        else
+            return c;
+    }
+    else if (b > c)
+        return b;
+    else
+        return c;
+}
 
 // counting from 1 to n
 void count(int n)
@@ -59,6 +74,15 @@ void count(int n)
     {
         cout << i << " ";
     }
+}
+// OR
+void count1ToN(int n)
+{
+    for (int i = 0; i < n; i++)
+    {
+        cout << i + 1 << " ";
+    }
+    return;
 }
 
 // Grading
@@ -80,29 +104,52 @@ char Grading(int marks)
     {
     case 10:
         return 'A';
-        break;
     case 9:
         return 'A';
-        break;
     case 8:
         return 'B';
-        break;
     case 7:
         return 'C';
-        break;
     case 6:
         return 'D';
-        break;
     case 5:
         return 'E';
-        break;
     default:
         return 'E';
-        break;
+    }
+}
+// OR
+char getGrade(int m)
+{
+
+    // if (m >= 90)
+    //     return 'A';
+    // else if (m >= 80)
+    //     return 'B';
+    // else if (m >= 70)
+    //     return 'C';
+    // else if (m >= 60)
+    //     return 'D';
+    // else
+    //     return 'E';
+
+    switch (m / 10)
+    {
+    case 10:
+    case 9:
+        return 'A';
+    case 8:
+        return 'B';
+    case 7:
+        return 'C';
+    case 6:
+        return 'D';
+    default:
+        return 'E';
     }
 }
 
-// Sum of Even Number upto N
+// Sum of Number upto N
 int sumOfN(int n)
 {
     int sum = 0;
@@ -112,13 +159,34 @@ int sumOfN(int n)
     }
     return sum;
 }
+// OR
+int sumN(int n)
+{
+    int sum = 0;
+    for (int i = 0; i < n; i++)
+    {
+        sum += (i + 1);
+    }
+    return sum;
+}
 
+//  Sum of Even Number upto N
 int sumOfEvenN(int n)
 {
     int sum = 0;
     for (int i = 2; i <= n; i += 2)
     {
         sum = sum + i;
+    }
+    return sum;
+}
+// OR
+int sumOfEvenUptoN(int n)
+{
+    int sum = 0;
+    for (int i = 2; i <= n; i += 2)
+    {
+        sum += i;
     }
     return sum;
 }
@@ -164,4 +232,22 @@ int main()
     // int sum = sumOfEvenN(n);
     // cout << "Sum = " << sum;
     // return 0;
+
+    // Revise;
+    // int a, b, c;
+    // cin >> a >> b >> c;
+    // cout << "Maximum number is : " << findMaxOf(a, b, c);
+
+    // int n;
+    // cin >> n;
+    // count1ToN(n);
+
+    // int marks;
+    // cin >> marks;
+    // cout << "Student Grade is : " << getGrade(marks);
+
+    int n;
+    cin >> n;
+    // cout << "Sum of N numbers is : " << sumN(n) << endl;
+    cout << "Sum of Even numbers upto N is : " << sumOfEvenUptoN(n);
 }

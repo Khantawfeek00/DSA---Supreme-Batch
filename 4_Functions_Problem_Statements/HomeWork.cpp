@@ -8,6 +8,11 @@ float areaOfCircle(int r)
 {
     return 3.14 * r * r;
 }
+// Revise
+float areaOfCircleR(int r)
+{
+    return 3.14 * r * r;
+}
 
 bool isEvenOrOdd(int n)
 {
@@ -20,6 +25,14 @@ bool isEvenOrOdd(int n)
         return false;
     }
 }
+// Revise
+bool isEven(int n)
+{
+    if ((n & 1) == 0)
+        return true;
+    else
+        return false;
+}
 
 int Factorial(int n)
 {
@@ -28,6 +41,16 @@ int Factorial(int n)
     {
         fact = fact * n;
         n--;
+    }
+    return fact;
+}
+// Revise
+int FactorialOfN(int n)
+{
+    int fact = 1;
+    for (int i = 1; i <= n; i++)
+    {
+        fact *= i;
     }
     return fact;
 }
@@ -43,11 +66,21 @@ bool isPrime(int n)
     }
     return true;
 }
+// Revise
+bool isPrimeN(int n)
+{
+    for (int i = 2; i < n; i++)
+    {
+        if (n % i == 0)
+            return false;
+    }
+    return true;
+}
 
 void printDigits(int n)
 {
     cout << "Digits are : ";
-    // print 527==> 7 2 7   
+    // print 527==> 5 2 7
     // while (n != 0)
     // {
     //     cout << n % 10 << " ";
@@ -55,8 +88,7 @@ void printDigits(int n)
     // }
     // return;
 
-
-    // print 527==> 5 2 7  
+    // print 527==> 5 2 7
     int len = (int)floor(log10(n)) + 1;
     int i = len - 1;
     while (n > 0)
@@ -65,6 +97,27 @@ void printDigits(int n)
         cout << div << " ";
         n = n - (pow(10, i) * div);
         i--;
+    }
+}
+// Revise
+void printDigitsOfN(int n)
+{
+    // Print reverse digits
+    // while (n != 0)
+    // {
+    //     cout << n % 10 << " ";
+    //     n /= 10;
+    // }
+
+    // print in order
+    int len = (int)floor(log10(n)) + 1;
+    int i = len - 1;
+    int dividend = pow(10, i);
+    cout << "Dividend : " << dividend << endl;
+    while (dividend > 0)
+    {
+        cout << (n / dividend) % 10 << " ";
+        dividend /= 10;
     }
 }
 
@@ -186,11 +239,11 @@ int main()
     // }
 
     // 6.Print all digits in an integer
-    int n;
-    cout << "Enter the value of n :";
-    cin >> n;
-    printDigits(n);
-    return 0;
+    // int n;
+    // cout << "Enter the value of n :";
+    // cin >> n;
+    // printDigits(n);
+    // return 0;
 
     // 7.Create a number using digits
     // int n;
@@ -253,4 +306,42 @@ int main()
     // float farh = celToFarh(n);
     // cout << "Temperature in Fahrenheit is : " << farh;
     // return 0;
+
+    // Revise
+    // 1. Write a function to display area of circle
+    // int r;
+    // cout << "Enter the radius of the circle : ";
+    // cin >> r;
+    // cout << "Area of the Circle is : " << areaOfCircleR(r);
+
+    // 2.Find the number is Even or Odd;
+    // int n;
+    // cout << "Enter the value of n: ";
+    // cin >> n;
+    // if (isEven(n))
+    //     cout << "The number " << n << " is Even";
+    // else
+    //     cout << "The number " << n << " is Odd";
+
+    // 3.Find Factorial of a number
+    // int n;
+    // cout << "Enter the value of n: ";
+    // cin >> n;
+    // cout << "Factoril of " << n << " is " << FactorialOfN(n);
+
+    // 3.Check Number is prime or not
+    // int n;
+    // cout << "Enter the value of n: ";
+    // cin >> n;
+    // if (isPrimeN(n))
+    //     cout << "The number " << n << " is Prime";
+    // else
+    //     cout << "The number " << n << " is not Prime";
+
+    // 6.Print all digits in an integer
+    int n;
+    cout << "Enter the value of n :";
+    cin >> n;
+    printDigitsOfN(n);
+    return 0;
 }
