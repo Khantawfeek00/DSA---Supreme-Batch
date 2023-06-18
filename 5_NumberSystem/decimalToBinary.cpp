@@ -19,24 +19,51 @@ using namespace std;
 //  }
 
 // Bitwise Method
-int decimalToBinary(int n)
+// int decimalToBinary(int n)
+// {
+//     int binary = 0;
+//     int i = 0;
+//     while (n != 0)
+//     {
+//         int bit = (n & 1);
+//         binary += (bit * pow(10, i++));
+//         n = n >> 1;
+//     }
+//     cout << binary << endl;
+//     return binary;
+// }
+
+// int decimalToBinaryN(int n)
+// {
+//     int binary = 0;
+//     int i = 0;
+//     while (n > 0)
+//     {
+//         int rem = n % 2;
+//         binary = rem * pow(10, i++) + binary;
+//         n /= 2;
+//     }
+//     return binary;
+// }
+
+void decimalToBinaryN(int n)
 {
-    int binary = 0;
-    int i = 0;
-    while (n != 0)
+
+    for (int i = 31; i >= 0; i--)
     {
-        int bit = (n & 1);
-        binary += (bit * pow(10, i++));
-        n = n >> 1;
+        // if (((n >> i) & 1))
+        //     cout << "1";
+        // else
+        //     cout << "0";
+
+        cout << ((n >> i) & 1);
     }
-    cout << binary << endl;
-    return binary;
 }
 
 int main()
 {
     int n;
     cin >> n;
-    int binary = decimalToBinary(n);
+    decimalToBinaryN(n);
     return 0;
 }
