@@ -22,7 +22,6 @@ int binaryToDecimal(int n)
 {
     int decimal = 0;
     int base = 1;
-
     while (n > 0)
     {
         if (n & 1)
