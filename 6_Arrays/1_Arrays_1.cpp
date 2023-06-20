@@ -103,7 +103,7 @@ int main()
     // return 0;
 
     // char str[] = "geeksforgeeks";
-    // memset(str, 't', sizeof(str)-1);
+    // memset(str, 't', sizeof(str) - 1);
     // cout << str;
     // return 0;
 
@@ -149,5 +149,30 @@ int main()
     //     cout << arr[i] << " ";
     // }
 
-    
+    // Revise
+    //  int arr[100];
+    //  cout << &arr;
+
+    // int arr[53];
+    // char arr[106];
+    // bool arr[23];
+
+    // int arr[] = {1, 2, 4, 5, 76};
+    // int arr[10] = {1, 2, 4, 5, 76};
+    // cout << arr[9];
+
+    // int arr[10]={1};
+    // cout << arr[9];
+
+    // int arr[5];
+    // cout<<"Enter the value of arrays: ";
+    // for (int i = 0; i < 5; i++)
+    // {
+    //     cin >> arr[i];
+    // }
+    // cout<<"Doubles are: ";
+    // for (int i = 0; i < 5; i++)
+    // {
+    //     cout << arr[i] * 2 << " ";
+    // }
 }
