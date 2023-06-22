@@ -130,16 +130,21 @@ int main()
     // return 0;
 
     // 5. This code attempts to rotate a matrix by 60 degrees. Debug it.
-    vector<vector<int>> matrix = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
-    rotate(matrix);
+    // vector<vector<int>> matrix = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
+    // rotate(matrix);
 
-    for (int i = 0; i < matrix.size(); i++)
+    // for (int i = 0; i < matrix.size(); i++)
+    // {
+    //     for (int j = 0; j < matrix.size(); j++)
+    //     {
+    //         cout << matrix[i][j] << " ";
+    //     }
+    //     cout << endl;
+    // }
+    // return 0;
+    bool temp[10 + 1] = {false};
+    for (int i = 0; i <= 10; i++)
     {
-        for (int j = 0; j < matrix.size(); j++)
-        {
-            cout << matrix[i][j] << " ";
-        }
-        cout << endl;
+        cout << temp[i] << " ";
     }
-    return 0;
 }
