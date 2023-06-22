@@ -21,16 +21,38 @@ int main()
     // arr.push_back(arr4);
 
     // vector<vector<int> > arr(3, vector<int>(3, 0));
-    vector<vector<int> > arr(5, vector<int>(5, -8));
+    // vector<vector<int>> arr(5, vector<int>(5, -8));
 
     // cout << arr.size() << endl;
     // cout << arr[0].size() << endl;
 
     // printing the vector
+    // for (int i = 0; i < arr.size(); i++)
+    // {
+    //     for (int j = 0; j < arr[i].size(); j++)
+    //         cout << arr[i][j] << " ";
+    //     cout << endl;
+    // }
+
+    // Revise
+    vector<vector<int>> arr;
+    // taking input
     for (int i = 0; i < arr.size(); i++)
     {
         for (int j = 0; j < arr[i].size(); j++)
+        {
+            cin >> arr[i][j];
+        }
+        cout << endl;
+    }
+
+    // printing
+    for (int i = 0; i < arr.size(); i++)
+    {
+        for (int j = 0; j < arr[i].size(); j++)
+        {
             cout << arr[i][j] << " ";
+        }
         cout << endl;
     }
 }
