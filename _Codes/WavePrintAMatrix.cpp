@@ -2,31 +2,8 @@
 #include <vector>
 using namespace std;
 
-// Column-Wise Wave Form
-//  void WavePrintMatrix(vector<vector<int>> arr)
-//  {
-//      int n = arr.size();
-//      int m = arr[0].size();
-//      bool flag = true;
-//      for (int i = 0; i < m; i++)
-//      {
-//          if (flag)
-//          {
-//              for (int j = 0; j < n; j++)
-//                  cout << arr[j][i] << " ";
-//              flag = false;
-//          }
-//          else
-//          {
-//              for (int j = n - 1; j >= 0; j--)
-//                  cout << arr[j][i] << " ";
-//              flag = true;
-//          }
-//      }
-//  }
-
 // Row-Wise Wave Form
-void WavePrintMatrix(vector<vector<int>> arr)
+void WavePrintMatrixRow(vector<vector<int>> arr)
 {
     int n = arr.size();
     int m = arr[0].size();
@@ -48,6 +25,35 @@ void WavePrintMatrix(vector<vector<int>> arr)
     }
 }
 
+// Column-Wise Wave Form
+void WavePrintMatrixColumn(vector<vector<int>> arr)
+{
+    int row = arr.size();
+    int col = arr[0].size();
+    bool isTrue = true;
+    for (int i = 0; i < col; i++)
+    {
+        if (isTrue)
+        {
+            for (int j = 0; j < row; j++)
+            {
+                cout << arr[j][i] << " ";
+            }
+            isTrue = false;
+            cout << " | ";
+        }
+        else
+        {
+            for (int j = row - 1; j >= 0; j--)
+            {
+                cout << arr[j][i] << " ";
+            }
+            isTrue = true;
+            cout << " | ";
+        }
+    }
+}
+
 int main()
 {
     int n, m;
@@ -62,6 +68,6 @@ int main()
             cin >> arr[i][j];
         }
     }
-    WavePrintMatrix(arr);
+    WavePrintMatrixRow(arr);
     return 0;
 }
