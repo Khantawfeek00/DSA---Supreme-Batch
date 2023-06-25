@@ -3,35 +3,23 @@
 #include <algorithm>
 using namespace std;
 
-//while comparing picking index and previous and next elements to find the numbers
+// while comparing picking index and previous and next elements to find the numbers
 int finOddOccElement(vector<int> arr)
 {
-    int n = arr.size();
-    int s = 0;
-    int e = n - 1;
-    int mid = s + (e - s) / 2;
-
-    while (s <= e)
+    int start = 0;
+    int end = arr.size() - 1;
+    int mid = 0;
+    while (start < end)
     {
-        if (s == e)
-            return mid;
-        if (mid % 2 == 0)
-        {
-            if (arr[mid] == arr[mid + 1])
-                s = mid + 2;
-            else
-                e = mid;
-        }
+        mid = start + (end - start) / 2;
+        if (mid + 1 >= 0 && mid & 1 == 0 && arr[mid] == arr[mid + 1])
+            start = mid + 2;
+        else if (mid - 1 <= arr.size() - 1 && mid & 1 == 1 && arr[mid] == arr[mid - 1])
+            start = mid + 1;
         else
-        {
-            if (arr[mid] == arr[mid - 1])
-                s = mid + 1;
-            else
-                e = mid - 1;
-        }
-        mid = s + (e - s) / 2;
+            end = mid;
     }
-    return -1;
+    return arr[start];
 }
 int main()
 {
