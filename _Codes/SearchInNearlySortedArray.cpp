@@ -4,30 +4,54 @@
 using namespace std;
 // Check for mid ,mid+1,mid-1 because mid value may be at i,i-1,i+1
 //  position because array is nearly sorted
+// int SearchInNearlySortedArray(vector<int> arr, int target)
+// {
+//     int n = arr.size();
+//     int s = 0;
+//     int e = n - 1;
+//     int mid = s + (e - s) / 2;
+
+//     while (s <= e)
+//     {
+//         if (arr[mid] == target)
+//             return mid;
+//         else if (arr[abs(mid - 1) % n] == target)
+//             return abs(mid - 1) % n;
+//         else if (arr[(mid + 1) % n] == target)
+//             return (mid + 1) % n;
+
+//         if (arr[mid] > target)
+//             e = mid - 2;
+//         else
+//             s = mid + 2;
+//         mid = s + (e - s) / 2;
+//     }
+//     return -1;
+// }
+
 int SearchInNearlySortedArray(vector<int> arr, int target)
 {
-    int n = arr.size();
-    int s = 0;
-    int e = n - 1;
-    int mid = s + (e - s) / 2;
+    int start = 0;
+    int end = arr.size() - 1;
 
-    while (s <= e)
+    int mid;
+    while (start <= end)
     {
+        mid = start + (end - start) / 2;
         if (arr[mid] == target)
             return mid;
-        else if (arr[abs(mid - 1) % n] == target)
-            return abs(mid - 1) % n;
-        else if (arr[(mid + 1) % n] == target)
-            return (mid + 1) % n;
-
-        if (arr[mid] > target)
-            e = mid - 2;
+        else if (mid > 0 && arr[mid - 1] == target)
+            return mid - 1;
+        else if (mid < arr.size() - 1 && arr[mid + 1] == target)
+            return mid + 1;
+        else if (arr[mid] > target)
+            end = mid - 2;
         else
-            s = mid + 2;
-        mid = s + (e - s) / 2;
+            start = mid + 2;
     }
     return -1;
 }
+
 int main()
 {
     int n;

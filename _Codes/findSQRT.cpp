@@ -25,7 +25,7 @@ int mySqrt(int n)
     }
     return sqrt;
 }
-double precise(int ans, int precise,int n)
+double precise(int ans, int precise, int n)
 {
     double factor = 1;
     double result = ans;
@@ -48,6 +48,6 @@ int main()
     cout << "Enter Precision : ";
     int precision;
     cin >> precision;
-    cout << "Precise Sqaure Root is : " << precise(ans, precision,n);
+    cout << "Precise Sqaure Root is : " << precise(ans, precision, n);
     return 0;
 }
