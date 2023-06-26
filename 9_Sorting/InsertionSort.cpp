@@ -22,23 +22,38 @@ using namespace std;
 //         cout << arr[i] << " ";
 // }
 
-void InsertionSort(vector<int> arr, int n)
+// void InsertionSort(vector<int> arr, int n)
+// {
+//     for (int i = 1; i < n; i++)
+//     {
+//         int j = i - 1;
+//         int temp = arr[i];
+//         while (j >= 0 && temp < arr[j])
+//         {
+//             arr[j + 1] = arr[j];
+//             j--;
+//         }
+//         arr[j + 1] = temp;
+//     }
+//     // printing sorted array
+//     cout << "Sorted Array is : ";
+//     for (int i = 0; i < n; i++)
+//         cout << arr[i] << " ";
+// }
+
+void InsertionSort(vector<int> arr)
 {
     for (int i = 1; i < n; i++)
     {
-        int j = i - 1;
+        int j = i;
         int temp = arr[i];
-        while (j >= 0 && temp < arr[j])
+        while (j > 0 && temp < arr[j - 1])
         {
-            arr[j + 1] = arr[j];
+            arr[j] = arr[j - 1];
             j--;
         }
-        arr[j + 1] = temp;
+        arr[j] = temp;
     }
-    // printing sorted array
-    cout << "Sorted Array is : ";
-    for (int i = 0; i < n; i++)
-        cout << arr[i] << " ";
 }
 
 int main()
