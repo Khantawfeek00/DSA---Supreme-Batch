@@ -13,9 +13,9 @@ int main()
     // cout << name[4];
     // cout << name[5];
 
-    // // char name[20];
-    // // cin >> name;
-    // // cout << name;
+    // char name[20];
+    // cin >> name;
+    // cout << name;
 
     // char arr[50];
     // cin >> arr[49];
@@ -37,10 +37,25 @@ int main()
     // cin.getline(name, 20);
     // cout << name;
 
-    char arr[50];
-    cin >> arr[2];
-    cin >> arr[14];
-    cin >> arr;
-    cin.getline(arr, 30);
-    cout << arr;
+    // char arr[50];
+    // cin >> arr[2];
+    // cin >> arr[14];
+    // cin >> arr;
+    // cin.getline(arr, 30);
+    // cout << arr;
+
+    // char ch[10];
+    // cin >> ch;
+    // cout << ch;
+
+    // char name[20];
+    // cin >> name;
+    // cout << "Your name is :" << name;
+
+    char ch[100], name[30];
+
+    // cin >> ch;
+    // cout << "ch = " << ch;
+    cin.getline(name, 20);
+    cout << "Name = " << name;
 }

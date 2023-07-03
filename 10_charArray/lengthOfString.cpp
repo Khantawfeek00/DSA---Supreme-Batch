@@ -2,16 +2,27 @@
 #include <string.h>
 using namespace std;
 
+// int getLength(char arr[])
+// {
+//     int count = 0;
+//     int i = 0;
+//     while (arr[i] != '\0')
+//     {
+//         count++;
+//         i++;
+//     }
+//     return count;
+// }
+
 int getLength(char arr[])
 {
-    int count = 0;
-    int i = 0;
-    while (arr[i] != '\0')
+    int length = 0;
+    while (1)
     {
-        count++;
-        i++;
+        if (arr[length] == '\0')
+            return length;
+        length++;
     }
-    return count;
 }
 int main()
 {
