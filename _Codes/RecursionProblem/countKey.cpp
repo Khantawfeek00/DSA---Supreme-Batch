@@ -1,13 +1,27 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int search(int arr[], int N, int X, int count)
+// int search(int arr[], int N, int X, int &count)
+// {
+//     // Using Recursion
+//     if (N == 0)
+//         return count;
+//     return arr[N - 1] == X ? search(arr, N - 1, X, count + 1) : search(arr, N - 1, X, count);
+// }
+
+// Using Recursion
+int search(int arr[], int N, int X, int &count)
 {
     // Using Recursion
     if (N == 0)
         return count;
-    return arr[N - 1] == X ? search(arr, N - 1, X, count + 1) : search(arr, N - 1, X, count);
+    if (arr[N - 1] == X)
+    {
+        count = count + 1;
+    }
+    return search(arr, N - 1, X, count);
 }
+
 int main()
 {
     int n, x;
@@ -18,5 +32,7 @@ int main()
         cin >> arr[i];
     cout << "Enter the value of X: ";
     cin >> x;
-    cout << "Index = " << search(arr, n, x, 0);
+    // cout << "Number of ele = " << search(arr, n, x, 0);
+    int i = 0;
+    cout << "Number of ele = " << search(arr, n, x, i);
 }
