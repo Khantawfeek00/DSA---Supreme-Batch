@@ -1,5 +1,3 @@
-#include<iostream>
-using namespace std;
-int main(){
-    
-}
+//Sieve of Eratothenes 
+//Segmented Sieve
+//Solved code in above code folder
