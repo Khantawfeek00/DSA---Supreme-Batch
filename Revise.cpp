@@ -1,6 +1,23 @@
 #include <iostream>
 using namespace std;
+int f(int x)
+{
+    if (x == 2)
+        return 2;
+    cout << '+';
+    f(x - 1);
+}
 
+string removeAllOccSubstr(string &s, string &part)
+{
+    int index = s.find(part);
+    if (index != string::npos)
+    {
+        s.erase(index, part.length());
+        removeAllOccSubstr(s, part);
+    }
+    return s;
+}
 int main()
 {
     // int a = 5, b = -7, c = 0, d;
@@ -21,10 +38,19 @@ int main()
     // cout << a;
     // printf("%d", a);
 
-    switch ('A')
-    {
-    case 1==2:
-        cout << "A";
-        break;
-    }
+    // switch ('A')
+    // {
+    // case 1==2:
+    //     cout << "A";
+    //     break;
+    // }
+
+    // int n = f(6);
+    // cout << n << endl;
+    // return 0;
+
+    string s = "Taffeek";
+    string part = "fe";
+    cout << removeAllOccSubstr(s, part);
+    return 0;
 }
