@@ -8,6 +8,24 @@ int f(int x)
     f(x - 1);
 }
 
+int coinChangeProblem(int target, vector<int> &arr)
+{
+    if (target == 0)
+        return 1;
+    if (target < 0)
+        return INT_MAX;
+
+    long mini = INT_MAX;
+    for (int i = 0; i < arr.size(); i++)
+    {
+        int ans = mini, coinChangeProblem(target - arr[i], arr);
+        if (ans != INT_MAX)
+            mini = min(mini, ans + 1);
+    }
+
+    return mini;
+}
+
 string removeAllOccSubstr(string &s, string &part)
 {
     int index = s.find(part);
