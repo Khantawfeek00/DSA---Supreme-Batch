@@ -27,8 +27,7 @@ int partition(int *arr, int s, int e)
     while (i < pivotIndex && j > pivotIndex)
     {
         while (arr[i] <= pivotElement)
-            i++;
-
+            i++;z
         while (arr[j] > pivotElement)
             j--;
 
