@@ -131,3 +131,30 @@ int main()
     for (auto ele : ans)
         cout << ele << " ";
 }
+
+/* Simple Solution
+Submitted on GFG
+    int vari[4]={1,0,0,-1};
+    int varj[4]={0,-1,1,0};
+    char ch[4]={'D','L','R','U'};
+    void getPaths(vector<vector<int>> &m,int n,vector<vector<bool>>& visit,string& out,int i,int j,vector<string>& ans){
+        if(i<0 || j<0 || i>=n || j>=n || visit[i][j]==true || m[i][j]==0){
+            return;
+        }
+        if(i==n-1 && j==n-1){
+            ans.push_back(out);
+            return;
+        }
+        visit[i][j]=true;
+
+        for(int k=0;k<4;k++){
+            //movement
+            out.push_back(ch[k]);
+            getPaths(m,n,visit,out,vari[k]+i,varj[k]+j,ans);
+            out.pop_back();
+        }
+
+        visit[i][j]=false;
+    }
+
+*/
