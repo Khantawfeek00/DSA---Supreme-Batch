@@ -1,5 +1,6 @@
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
+/*
 int f(int x)
 {
     if (x == 2)
@@ -35,7 +36,7 @@ string removeAllOccSubstr(string &s, string &part)
         removeAllOccSubstr(s, part);
     }
     return s;
-}
+}*/
 int main()
 {
     // int a = 5, b = -7, c = 0, d;
@@ -67,8 +68,10 @@ int main()
     // cout << n << endl;
     // return 0;
 
-    string s = "Taffeek";
-    string part = "fe";
-    cout << removeAllOccSubstr(s, part);
-    return 0;
+    // string s = "Taffeek";
+    // string part = "fe";
+    // cout << removeAllOccSubstr(s, part);
+    // return 0;
+
+    cout << ceil(1.1);
 }
