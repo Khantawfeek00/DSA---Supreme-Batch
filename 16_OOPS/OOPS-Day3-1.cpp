@@ -4,8 +4,10 @@ using namespace std;
 class World
 {
 public:
+    int num;
     World()
     {
+        cout << &this->num << endl;
         cout << "Inside the World Constructor" << endl;
     }
 
@@ -19,6 +21,7 @@ class Animal : public World
 public:
     Animal()
     {
+        cout << &this->num << endl;
         cout << "Inside the Animal Constructor" << endl;
     }
     Animal(int a, int b)
@@ -36,7 +39,7 @@ class Dog : public Animal
 public:
     Dog()
     {
-        Animal(1, 3);
+        // Animal(1, 3);
         cout << "Inside the Dog Constructor" << endl;
     }
     // override
@@ -74,8 +77,8 @@ int main()
     //  d2->name();
 
     // Now for Constructor
-    // Animal *a = new Animal();
-    // a->speak();
+    Animal *a = new Animal();
+    a->speak();
 
     // Dog *a = new Dog();
     // a->speak();
@@ -98,4 +101,41 @@ int main()
     // Dog *d = new Dog();
     // Dog d;
     // d.speak();
+
+    // Dynamic Memory Allocation
+    // int *num = new int;
+    // cout << *num << endl;
+
+    // char *ch = new char;
+    // cout << *ch << endl;
+
+    // int *a = new int[10];
+    // for (int i = 0; i < 10; i++)
+    //     cout << a[0] << " ";
+
+    // dynamic 2d arrray
+    // int row = 5;
+    // int col = 5;
+    // int **arr = new int *[row];
+    // for (int i = 0; i < 5; i++)
+    // {
+    //     arr[i] = new int[col];
+    // }
+
+    // printing
+    // for (int i = 0; i < row; i++)
+    // {
+    //     for (int j = 0; j < col; j++)
+    //     {
+    //         cout << arr[i][j] << " ";
+    //     }
+    //     cout << endl;
+    // }
+
+    // deallocating
+    // for (int i = 0; i < row; i++)
+    // {
+    //     delete[] arr[i];
+    // }
+    // delete[] arr;
 }
