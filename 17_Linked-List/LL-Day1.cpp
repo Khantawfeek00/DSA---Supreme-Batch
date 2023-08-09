@@ -203,6 +203,33 @@ void deletePosition(node *&head, node *&tail, int position)
     curr->next = NULL;
     delete curr;
 }
+void deleteByData(node *&head, int d)
+{
+    if (head == NULL)
+    {
+        cout << "LL is empty" << endl;
+        return;
+    }
+    if (head->data == d)
+    {
+        head = head->next;
+        return;
+    }
+    node *temp = head;
+    while (temp->next != NULL && temp->next->data != d)
+    {
+        temp = temp->next;
+    }
+    if (temp->next == NULL)
+    {
+        cout << "Node is not Present" << endl;
+        return;
+    }
+    node *del = temp->next;
+    temp->next = del->next;
+    del->next = NULL;
+    delete del;
+}
 int main()
 {
     // node *first = new node(1);
@@ -265,7 +292,7 @@ int main()
     // cout << endl;
     // insertAtPosition(head, tail, 1000, 20);
 
-    print(head);
+    // print(head);
 
     // deleteHead(head);
 
@@ -274,7 +301,12 @@ int main()
     // deletePosition(head, tail, 1);
     // deletePosition(head, tail, 2);
     // deletePosition(head, tail, 3);
-    deletePosition(head, tail, 4);
+    // deletePosition(head, tail, 4);
     // deletePosition(head, tail, 5);
+
+    print(head);
+
+    deleteByData(head, 550);
+
     print(head);
 }
