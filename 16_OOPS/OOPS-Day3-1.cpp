@@ -7,7 +7,7 @@ public:
     int num;
     World()
     {
-        cout << &this->num << endl;
+        // cout << &this->num << endl;
         cout << "Inside the World Constructor" << endl;
     }
 
@@ -21,7 +21,7 @@ class Animal : public World
 public:
     Animal()
     {
-        cout << &this->num << endl;
+        // cout << &this->num << endl;
         cout << "Inside the Animal Constructor" << endl;
     }
     Animal(int a, int b)
@@ -67,8 +67,8 @@ int main()
     // d1->speak();
 
     // UpCasting
-    //  Animal *a = new Dog();
-    //  a->speak();
+    // Animal *a = new Dog();
+    // a->speak();
     //  a->name(); //Error
 
     // DownCasting
@@ -77,8 +77,8 @@ int main()
     //  d2->name();
 
     // Now for Constructor
-    Animal *a = new Animal();
-    a->speak();
+    // Animal *a = new Animal();
+    // a->speak();
 
     // Dog *a = new Dog();
     // a->speak();
@@ -89,8 +89,8 @@ int main()
     // Dog *a = (Dog *)new Animal();
     // a->speak();
 
-    // Dog *a = new Dog();
-    // a->speak();
+    Dog *a = new Dog();
+    a->speak();
 
     // Animal* a=new Animal();
     // a->speak();
