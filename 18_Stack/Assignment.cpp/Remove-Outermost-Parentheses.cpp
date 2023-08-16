@@ -1,6 +1,8 @@
 #include <iostream>
 #include <stack>
 using namespace std;
+
+// using recursion with stack
 void removePara(string &str, stack<char> &s, int &i, string &ans)
 {
     if (i >= str.length())
