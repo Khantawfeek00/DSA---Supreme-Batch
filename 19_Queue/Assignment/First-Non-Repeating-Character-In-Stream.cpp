@@ -3,7 +3,7 @@
 #include <queue>
 #include <deque>
 using namespace std;
-string FirstNonRepeating(string A)
+/*string FirstNonRepeating(string A)
 {
     int arr[26] = {0};
     deque<char> dq;
@@ -27,6 +27,35 @@ string FirstNonRepeating(string A)
         else
         {
             ans.push_back(dq.front());
+        }
+    }
+    return ans;
+}
+
+*/
+
+// T.C.-O(n) S.C.=O(n)
+string FirstNonRepeating(string A)
+{
+    queue<char> que;
+    char arr[26] = {0};
+    string ans;
+    for (char ch : A)
+    {
+        que.push(ch);
+        arr[(int)ch - 'a']++;
+
+        while (!que.empty() && arr[(int)que.front() - 'a'] > 1)
+        {
+            que.pop();
+        }
+        if (que.empty())
+        {
+            ans.push_back('#');
+        }
+        else
+        {
+            ans.push_back(que.front());
         }
     }
     return ans;
