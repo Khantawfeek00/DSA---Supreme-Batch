@@ -72,6 +72,12 @@ int kthAncestor(Node *root, int k, int node)
     int ans = -1;
     Solve(root, k, node, ans);
     return ans;
+
+    /*
+    Another solution using vector
+    while returning pop_back else push_back
+    and if the element the found then return (size-k)th the element
+    */
 }
 
 int main()
