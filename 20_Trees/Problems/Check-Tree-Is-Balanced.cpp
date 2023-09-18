@@ -42,6 +42,7 @@ Node *buildTree()
     return newNode;
 }
 
+/* Slow Code below Code is Fast use it in an interview
 // height of the node
 int heightOfTree(Node *root)
 {
@@ -69,7 +70,31 @@ bool isBalanced(Node *root)
     // recursive call for all node
     return ans && isBalanced(root->left) && isBalanced(root->right);
 }
+*/
 
+bool ans = true;
+int heightOfTree(Node *root)
+{
+    if (root == NULL)
+    {
+        return 0;
+    }
+
+    int lh = heightOfTree(root->left);
+    int rh = heightOfTree(root->right);
+
+    if (abs(lh - rh) > 1)
+    {
+        ans = ans && false;
+    }
+
+    return max(lh, rh) + 1;
+}
+bool isBalanced(Node *root)
+{
+    heightOfTree(root);
+    return ans;
+}
 int main()
 {
     Node *root = buildTree();
